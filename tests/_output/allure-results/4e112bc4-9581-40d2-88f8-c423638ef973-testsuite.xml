@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alr:test-suite xmlns:alr="urn:model.allure.qatools.yandex.ru" start="1622408531271" stop="1622408531879" version="1.4.0">
+  <name>Taf\Tests.api</name>
+  <test-cases>
+    <test-case start="1622408531273" stop="1622408531879" status="passed">
+      <name>tryApi with data set #0</name>
+      <title><![CDATA[Test link title]]></title>
+      <description type="text"><![CDATA[Test link test desc]]></description>
+      <steps>
+        <step start="1622408531274" stop="1622408531876" status="passed">
+          <name><![CDATA[send get "/status/200"]]></name>
+        </step>
+        <step start="1622408531877" stop="1622408531879" status="passed">
+          <name><![CDATA[see response code is "200"]]></name>
+        </step>
+      </steps>
+      <labels>
+        <label name="testMethod" value="tryApi"/>
+        <label name="testClass" value="Taf\Tests\ApiCest"/>
+        <label name="AS_ID" value="123"/>
+        <label name="issue" value="SSS-1111"/>
+        <label name="testId" value="23"/>
+        <label name="feature" value="First Feature"/>
+        <label name="story" value="First Story"/>
+      </labels>
+      <parameters>
+        <parameter name="url" value="&quot;/status/200&quot;" kind="argument"/>
+        <parameter name="status" value="&quot;200&quot;" kind="argument"/>
+      </parameters>
+    </test-case>
+  </test-cases>
+</alr:test-suite>

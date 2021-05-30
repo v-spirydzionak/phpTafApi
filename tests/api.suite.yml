@@ -1,0 +1,20 @@
+actor: ApiTester
+path: api
+modules:
+    enabled:
+      - Asserts
+      - \Taf\Tests\Helper\Api
+      - REST:
+          url: https://httpbin.org/#
+          depends: PhpBrowser
+    step_decorators: ~
+extensions:
+  enabled:
+    - \Yandex\Allure\Codeception\AllureCodeception
+  config:
+    Yandex\Allure\Codeception\AllureCodeception:
+      deletePreviousResults: true
+      outputDirectory: allure-results
+      ignoredAnnotations:
+        - env
+        - dataprovider
